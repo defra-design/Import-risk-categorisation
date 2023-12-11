@@ -1,0 +1,36 @@
+{#
+For guidance on how to use layouts see:
+https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
+#}
+
+{% extends "govuk-prototype-kit/layouts/govuk-branded.njk" %}
+
+
+<!--- HEADER --->
+{% block header %}
+    {% from "govuk/components/header/macro.njk" import govukHeader %}
+
+    {{ govukHeader({
+    homepageUrl: "#"
+    }) }}
+{% endblock %}
+
+<!--- PHASE BANNER --->
+{% block beforeContent %}
+{% from "govuk/components/phase-banner/macro.njk" import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "Prototype"
+  },
+  html: 'This is not live guidance'
+}) }}
+{% endblock %}
+
+
+<!--- FOOTER --->
+{% block footer %}
+{% from "govuk/components/footer/macro.njk" import govukFooter %}
+
+{{ govukFooter({}) }}
+  {% endblock %}

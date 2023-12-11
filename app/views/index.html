@@ -1,0 +1,70 @@
+{% extends "layouts/versions.html" %}
+
+{% block pageTitle %}
+  Check import risk categories prototype
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-l govuk-!-margin-bottom-9">
+        Check import risk guidance prototype
+      </h1>{{releaseVersion | log }}
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+
+    <!-------- PROTOTYPE VERSION LIST -------->
+
+            <!-- V1 -->
+            <dl class="govuk-list">
+
+              <p class="govuk-body">This is a prototype of the whitehall guidnace for <b>'Check import risk categories and related rules for animals and animal products imported from the EU to Great Britain from 31 January 2024'</b></p>
+              
+              <div class="govuk-!-padding-bottom-5"></div>
+
+                <dt>
+                  <h2 clss="govuk-heading-m">Version 1</h2>(December 2023)
+                </dt>
+              <dd>
+      
+                <ul class="govuk-list">
+                  <li>
+                    <a href="p1-home-doc-list.html">Prototype 1</a>
+                  </li>
+                  <li>
+                    <a href="p2-home-doc-list.html">Prototype 2</a>
+                  </li>
+                  <br>
+                </ul>
+
+              </dd>
+            </dl>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Related links
+          <span class="govuk-caption-m ">(all links open in a new tab)</span>
+        </h2>
+
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="https://draft-origin.publishing.service.gov.uk/government/publications/p1-check-import-risk-categories-and-related-rules-for-animals-and-animal-products-imported-from-the-eu-to-great-britain-from-31-january-2024" target="_blank">
+                Whitehall publisher version
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+
+  </div>
+
+{% endblock %}
